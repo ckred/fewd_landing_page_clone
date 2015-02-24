@@ -34,7 +34,7 @@ body {
 	background-color: lightgray;
 	font-family: 'Roboto', sans-serif;
 }
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -52,7 +52,7 @@ table {
 }
 
 div {
-	border: 1px solid Chocolate;
+/*	border: 1px solid Chocolate; */
 }
 
 .header {
@@ -67,6 +67,9 @@ div {
 	height: 4em;
 	position: relative;
 	margin: auto;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
 }
 
 .logo {
@@ -143,4 +146,42 @@ button:hover {
 	cursor: pointer;
 	background-color: #d9400e;
 	border-color: #cf3d0e;
+}
+
+.cases {
+	height: 30rem;
+	background-color: white;
+	position: relative;
+	padding: 5rem;
+	text-align: center;
+	z-index: -1;
+}
+
+.cases .devices {
+	max-width: 50px
+    width: 33%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 10em;
+}
+
+h3 {
+	font-size: 2.75rem;
+	font-weight: 300;
+	text-align: center;
+	margin: 2.625rem 0 3.125rem;
+}
+
+
+h4 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+	width: 180px;
+	height: 50px;
+	border-color: chocolate;
+	border-style: solid;
+	border-width: 2px;
 }
