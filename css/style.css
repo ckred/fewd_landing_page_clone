@@ -37,7 +37,9 @@ body {
 
 ol, ul {
 	list-style: none;
+	display: block;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -52,7 +54,7 @@ table {
 }
 
 div {
-/*	border: 1px solid Chocolate; */
+	/* border: 1px solid Chocolate; */
 }
 
 .header {
@@ -117,11 +119,11 @@ li:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	height: 10rem;
+	height: auto;
 	overflow: auto;
 	color: white;
 	padding: 13em 10em;
-	margin: 0 auto;
+	margin: 0;
 	min-width: 37.5rem;
 }
 
@@ -157,22 +159,23 @@ button:hover {
 }
 
 .content {
-	padding: 0 0.938rem;
-	margin: 0 auto;
+	padding: 0;
+	margin: 0;
 	min-width: 37.5rem;
+	font: inherit;
+	width: auto;
 }
 
 .cases {
 	height: 30rem;
 	background-color: white;
 	position: relative;
-	padding: 5rem;
+	padding: 4	rem 0 0;
 	text-align: center;
 	z-index: -1;
 }
 
 .cases .content {
-	margin-top: 7.875rem;
 	padding: none;
 	color: #1d1e21;
 	text-align: center
@@ -199,4 +202,55 @@ h4 {
 	margin: 2.5rem 0px 1.875rem;
 	width: 180px;
 	height: 50px;
+}
+
+h5 {
+	display: block;
+	font-size: 0.83em;
+	font: inherit;
+	text-align: center;
+}
+
+.social {
+	background-color: #fff;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+	font: inherit;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+
+.social .instagram {
+	color: #3f729b;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+.social .icons > li {
+	border-radius: 2rem;
+	display: inline-block;
+	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+	height: 15px;
+	width: 35px;
 }
