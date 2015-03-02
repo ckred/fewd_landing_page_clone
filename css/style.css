@@ -54,7 +54,11 @@ table {
 }
 
 div {
-	/* border: 1px solid Chocolate; */
+	border: 1px solid Chocolate;
+}
+
+nav {
+	text-align: center;
 }
 
 .header {
@@ -67,9 +71,10 @@ div {
 .top-navigation {
 	background-color: #fff;
 	position: fixed;
-	width: 100%;
+	width: 75%;
 	border-bottom: 1px solid #DDD;
 	z-index: 9999;
+	margin: 0 auto;
 }
 
 .navbar {
@@ -169,14 +174,16 @@ button:hover {
 .cases {
 	height: 30rem;
 	background-color: white;
+	background-position: center;
 	position: relative;
-	padding: 4	rem 0 0;
+	/* padding: 2rem 0 0; */
 	text-align: center;
 	z-index: -1;
+	overflow: auto;
 }
 
 .cases .content {
-	padding: none;
+	/* padding: none; */
 	color: #1d1e21;
 	text-align: center
 }
